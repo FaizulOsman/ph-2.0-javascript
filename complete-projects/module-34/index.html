@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunter</title>
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="v-2 (search-button-find-items)">
+        <div class="w-50 mx-auto mt-4">
+            <div class="input-group mb-3">
+                <input id="input-field" type="text" class="form-control" placeholder="Search By Phone Name">
+                <button onclick="searchButton()" class="btn btn-primary" type="button">Search</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="v-4 (Spinner-toggle)">
+        <div id="spinner" class="d-none d-flex justify-content-center align-items-center">
+            <div class="spinner-border text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="v-1 (display-items)">
+        <div id="item-container" class="row"> </div>
+    </section>
+
+
+    <section class="v-3 (no-items-alert)">
+        <h2 id="no-items-alert" class="d-none text-center mt-5">No items, Search a new phone</h2>
+    </section>
+
+
+    <section class="v-5 (show-all-items)">
+        <div class="d-flex justify-content-center mt-5">
+            <button id="show-all-btn" class="d-none btn btn-primary">Show All</button>
+        </div>
+    </section>
+
+
+    <section class="v-6 (modal-section)">
+        <div class="modal fade" id="itemDetailsModal" tabindex="-1" aria-labelledby="itemDetailsModalLabel"
+            aria-hidden="true">
+            <div id="modal-area" class="modal-dialog"> </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

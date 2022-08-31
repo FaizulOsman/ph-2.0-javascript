@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Link Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="mt-5">
+        <h1 class="text-center font-semibold text-4xl">Calculator</h1>
+        <div class="border border-black border-4 rounder w-96 mx-auto my-10">
+            <div class="">
+                <input id="result" type="text"
+                    class="w-full h-16 mx-auto text-3xl font-bold px-1 text-right tracking-wider" placeholder="0">
+            </div>
+            <div>
+                <div class="grid grid-cols-4 gap-1 bg-black border border-black border-t-4">
+                    <input type="button" class="bg-zinc-800 hover:bg-lime-500 text-white py-6 "
+                        style="background-color: red;" value="c" id="clearAll">
+                    <input type="button" class="bg-zinc-800 hover:bg-lime-500 text-white py-6 " value="+/-"
+                        onclick="plusMinus()">
+                    <input type="button" class="bg-zinc-800 hover:bg-lime-500 text-white py-6 " value="%"
+                        onclick="insertNumber('%')">
+                    <input type="button" class="bg-violet-700 hover:bg-lime-500 text-white py-6  btn-side" value="/"
+                        onclick="insertNumber('/')">
+
+                    <input type="button" class="bg-zinc-800 hover:bg-lime-500 text-white py-6 " value="7"
+                        onclick="insertNumber(7)">
+                    <input type="button" class="bg-zinc-800 hover:bg-lime-500 text-white py-6 " value="8"
+                        onclick="insertNumber(8)">
+                    <input type="button" class="bg-zinc-800 hover:bg-lime-500 text-white py-6 " value="9"
+                        onclick="insertNumber(9)">
+                    <input type="button" class="bg-violet-700 hover:bg-lime-500 text-white py-6  btn-side" value="*"
+                        onclick="insertNumber('*')">
+
+                    <input type="button" class="bg-zinc-800 hover:bg-lime-500 text-white py-6 " value="4"
+                        onclick="insertNumber(4)">
+                    <input type="button" class="bg-zinc-800 hover:bg-lime-500 text-white py-6 " value="5"
+                        onclick="insertNumber(5)">
+                    <input type="button" class="bg-zinc-800 hover:bg-lime-500 text-white py-6 " value="6"
+                        onclick="insertNumber(6)">
+                    <input type="button" class="bg-violet-700 hover:bg-lime-500 text-white py-6  btn-side" value="-"
+                        onclick="insertNumber('-')">
+
+                    <input type="button" class="bg-zinc-800 hover:bg-lime-500 text-white py-6 " value="1"
+                        onclick="insertNumber(1)">
+                    <input type="button" class="bg-zinc-800 hover:bg-lime-500 text-white py-6 " value="2"
+                        onclick="insertNumber(2)">
+                    <input type="button" class="bg-zinc-800 hover:bg-lime-500 text-white py-6 " value="3"
+                        onclick="insertNumber(3)">
+                    <input type="button" class="bg-violet-700 hover:bg-lime-500 text-white py-6  btn-side" value="+"
+                        onclick="insertNumber('+')">
+
+                    <input type="button" class="bg-zinc-800 hover:bg-lime-500 text-white py-6 " value="0"
+                        onclick="insertNumber(0)">
+                    <input type="button" class="bg-zinc-800 hover:bg-lime-500 text-white py-6 " value="."
+                        onclick="insertNumber('.')">
+                    <input type="button" class="bg-zinc-800 hover:bg-lime-500 text-white py-6 " value="DEL"
+                        onclick="delate()">
+                    <input type="button" class="bg-zinc-800 hover:bg-lime-500 text-white py-6 "
+                        style="background-color: #FFAD09;" value="=" onclick="equal()">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
